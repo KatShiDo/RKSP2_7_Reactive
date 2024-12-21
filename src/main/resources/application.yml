@@ -1,0 +1,13 @@
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  r2dbc:
+    username: postgres
+    password: 1
+    url: r2dbc:postgres://localhost:5432/pr7
+    initialization-mode: always
+  web:
+    resources:
+      static-locations: classpath:/,classpath:/resources/
